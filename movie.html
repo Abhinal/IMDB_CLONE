@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+
+    <!-- Include Bootstrap CSS for styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Include a custom CSS file for additional styling -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Set the favicon to a movie icon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🎬</text></svg">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">IMDB</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <!-- Navigation links -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class "nav-link" href="favourites.html">Favorites</a>
+                        <!-- Corrected a typo: 'class' should be 'class=' -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page title -->
+    <h2>Movie Details:</h2>
+    <br/>
+
+    <!-- Container for displaying movie details -->
+    <div class="container mt-5" id="movieDetails"></div>
+
+    <!-- Include a JavaScript file for dynamic functionality -->
+    <script src="movie.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourites</title>
+
+    <!-- Include Bootstrap CSS for styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Include a custom CSS file for additional styling -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Set the favicon to a movie icon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🎬</text></svg>">
+
+    <!-- Include a JavaScript file for dynamic functionality, with defer attribute to load it asynchronously -->
+    <script src="favorites.js" defer></script>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">IMDB</a>
+            <ul class="navbar-nav ml-auto">
+                <!-- Navigation links -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <!-- This page is marked as active in the navigation -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="favourites.html">Favourites</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main content container -->
+    <div class="container mt-4">
+        <h1 class="mb-4">List of Your Favourite Movies</h1>
+
+        <!-- This is where the list of favorite movies will be displayed -->
+        <div class="row" id="favouritesList">
+        </div>
+    </div>
+</body>
+
+</html>

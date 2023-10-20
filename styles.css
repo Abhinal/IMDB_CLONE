@@ -1,0 +1,180 @@
+/* Overall page styling */
+
+body {
+    background-image: url('background.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+
+h2 {
+    color: rgb(100, 2, 104);
+    font-weight: bolder;
+    background-color: rgb(142, 142, 142);
+    justify-items: center;
+}
+
+header {
+    background-color: rgb(114, 19, 12);
+    padding: 16px;
+    text-align: end;
+    color: goldenrod;
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: burlywood;
+    box-shadow: inset;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+/* Containers and layout styles */
+
+.quote-container {
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+    background-color: rgb(32, 133, 201);
+    border: 1px solid #090138;
+    border-radius: 5px;
+}
+
+.search-container {
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+    background-color: rgb(201, 32, 74);
+    border: 1px solid #380134;
+    border-radius: 5px;
+}
+
+main {
+    padding: 30px;
+}
+
+/* Styles for movie cards and buttons */
+
+.movies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+    padding: 5px;
+    margin: 5px;
+    justify-items: center;
+}
+
+.movie-card {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    color: rgb(0, 17, 255);
+    background-color: rgb(77, 209, 110);
+}
+
+.movie-card img {
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+button {
+    margin-top: 8px;
+    padding: 8px 16px;
+    background-color: #f73505;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6200ff;
+    color: whitesmoke;
+}
+
+/* Navigation bar styles */
+
+nav {
+    background-color: #aaffb5;
+}
+
+.container {
+    background-color: rgb(225, 225, 225);
+    color: rgb(42, 61, 165);
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: #aad6ff;
+    font-size: larger;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #54184b;
+}
+
+.navbar-nav .nav-link {
+    color: rgb(38, 0, 255);
+    font-size: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(250, 33, 5);
+}
+
+/* Styles for search and favorite movie cards */
+
+#searchResults .card {
+    width: 100%;
+    max-width: 200px;
+    min-height: 280px;
+    margin: 5px;
+    color: #034407;
+    font-weight: bolder;
+    background-color: #f7c784;
+    object-fit: cover;
+}
+
+#favouritesList .card {
+    background-color: #fff3cd;
+    width: 100%;
+    max-width: 200px;
+    min-height: 280px;
+    margin: 10px;
+    border: 1px solid #f0ad4e;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#favouritesList .card-img-top {
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+#favouritesList .card-body {
+    padding: 10px;
+}
+
+#favouritesList .card-title {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#favouritesList .more-button {
+    margin-top: 10px;
+}
